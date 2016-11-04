@@ -1,4 +1,38 @@
-div {
+body .navbar {
+  margin: 0; }
+
+.row {
+  margin: 20px 0 20px; }
+
+.panel-heading {
+  font-weight: bold; }
+
+.navbar-inverse .navbar-nav {
+  float: right; }
+.navbar-inverse .navbar-header a {
   color: #ffffff; }
+
+display-photo img {
+  width: 160px;
+  height: 194px; }
+display-photo .col-sm-2 .profile-pic {
+  width: inherit; }
+
+objective .col-sm-6 .panel .panel-heading span {
+  font-weight: bold;
+  margin-top: 0;
+  font-size: 24px; }
+objective .col-sm-6 .panel .panel-body .row {
+  width: 100%;
+  margin: 3px 0;
+  font-size: 0.9em; }
+objective .col-sm-6 .panel .panel-body .row.author {
+  text-align: right;
+  font-style: italic; }
+
+current-status .col-sm-4 .panel .panel-body h4 {
+  margin-top: 0; }
+current-status .col-sm-4 .panel .panel-body span {
+  font-weight: bold; }
 
 /*# sourceMappingURL=styles.css.map */

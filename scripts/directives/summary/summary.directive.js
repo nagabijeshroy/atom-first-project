@@ -1,11 +1,11 @@
 angular
     .module('app.myPortfolio')
-    .directive('portfolioNavbar', portfolioNavbar);
+    .directive('summary', summary);
 
-function portfolioNavbar() {
+function summary() {
     var directive = {
         link: link,
-        templateUrl: 'scripts/directives/navbar/navbar.directive.html',
+        templateUrl: 'scripts/directives/summary/summary.directive.html',
         restrict: 'EA'
     };
     return directive;

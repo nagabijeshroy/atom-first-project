@@ -8,8 +8,8 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Starter Template for Bootstrap</title>
-
+    <title>Naga Bijesh Roy Raya - Portfolio</title>
+    <link href="Styles/CSS/styles.css" rel="stylesheet">
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -19,18 +19,25 @@
 
 <body ng-app="app.myPortfolio">
     <div ng-controller="MainController as vm">
-      <portfolio-navbar></portfolio-navbar>
-      <photo></photo>
-      <objetive></objective>
-      <summary></summary>
-      <skills></skills>
-      <achievements></achievements>
-      <employment></employment>
-      <education></education>
-      <honors-and-awards></honors-and-awards>
-      <projects></projects>
-      <research-publications></research-publications>
-      <extra-curricular-activities></extra-curricularactivities>
+        <portfolio-navbar></portfolio-navbar>
+        <div class="container">
+            <div class="row">
+                <display-photo></display-photo>
+                <objective></objective>
+                <current-status></current-status>
+            </div>
+            <div class="row">
+                <summary></summary>
+                <skills></skills>
+            </div>
+            <achievements></achievements>
+            <employment></employment>
+
+            <honors-and-awards></honors-and-awards>
+            <projects></projects>
+            <research-publications></research-publications>
+            <extra-curricular-activities></extra-curricularactivities>
+        </div>
     </div>
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -44,6 +51,12 @@
     <script src="scripts/app.route.js"></script>
     <script src="scripts/controllers/main.controller.js"></script>
     <script src="scripts/directives/navbar/navbar.directive.js"></script>
+    <script src="scripts/directives/current-status/current-status.directive.js"></script>
+    <script src="scripts/directives/objective/objective.directive.js"></script>
+    <script src="scripts/directives/photo/display-photo.directive.js"></script>
+    <script src="scripts/directives/summary/summary.directive.js"></script>
+    <script src="scripts/directives/skills/skills.directive.js"></script>
+    <script src="scripts/directives/education/education.directive.js"></script>
     <script src="jquery/dist/jquery.min.js"></script>
     <script src="bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
