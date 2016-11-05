@@ -11,6 +11,10 @@ body {
     }
 }
 
+hr{
+  margin: 10px 0px 10px 0px !important;
+}
+
 .row {
     margin: $sectionMarginTop 0 $sectionMarginBottom;
 }
@@ -33,7 +37,7 @@ body {
 display-photo {
     img {
         width: 160px;
-        height: 194px;
+        height: 210px;
     }
 
     .col-sm-2 {
@@ -82,4 +86,13 @@ current-status {
             }
         }
     }
+}
+education{
+  .panel{
+    .panel-body{
+      .row{
+        margin: 0px 0px 0px 0px;
+      }
+    }
+  }
 }
