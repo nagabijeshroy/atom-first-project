@@ -1,3 +1,5 @@
 angular.module("app.myPortfolio",[
-   'ngRoute'
+   'ngRoute',
+   'ngAnimate',
+   'ui.bootstrap'
 ]);

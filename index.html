@@ -20,8 +20,8 @@
 <body ng-app="app.myPortfolio">
     <div ng-controller="MainController as vm">
         <portfolio-navbar></portfolio-navbar>
-        <div class="container">
-            <div class="row">
+        <div class="container profile">
+            <div class="row header">
                 <display-photo></display-photo>
                 <objective></objective>
                 <current-status></current-status>
@@ -29,16 +29,13 @@
             <div class="row">
                 <div class="col-sm-8">
                     <summary></summary>
-                </div>
-                <div class="col-sm-4">
-                    <skills></skills>
-                </div>
-                <div class="col-sm-8">
                     <education></education>
                 </div>
                 <div class="col-sm-4">
-                  <achievements></achievements>
+                    <skills></skills>
+                    <achievements></achievements>
                 </div>
+
                 <div class="col-sm-12">
                     <employment></employment>
                 </div>
@@ -56,6 +53,9 @@
     <script src="angular/angular.min.js"></script>
     <script src="angular-resource/angular-resource.min.js"></script>
     <script src="angular-route/angular-route.min.js"></script>
+    <script src="angular-animate/angular-animate.min.js"></script>
+    <script src="angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    <!-- <script src="angular-bootstrap/ui-bootstrap.min.js"></script> -->
     <script src="scripts/app.module.js"></script>
     <script src="scripts/app.config.js"></script>
     <script src="scripts/app.route.js"></script>
