@@ -1,21 +1,73 @@
-body .navbar {
-  margin: 0px auto; }
-body .container.profile {
-  margin-top: 50px; }
-  body .container.profile .row.header {
-    margin: 20px 0px 20px 0px; }
+body {
+  font-family: "helvetica neue", Helvetica, Arial !important; }
+  body .navbar {
+    margin: 0 auto;
+    background: #062f4f; }
+  body .navbar-header .navbar-brand {
+    color: #ffffff; }
+  body .container.profile {
+    margin-top: 50px; }
+    body .container.profile .row.header {
+      margin: 20px 0px 0px 0px; }
+
+ul.nav.navbar-nav a {
+  color: #ffffff !important; }
+ul.nav.navbar-nav li.active a {
+  color: #062f4f !important; }
+
+.glyphicon.glyphicon-minus,
+.glyphicon.glyphicon-plus {
+  padding-left: 10px;
+  font-weight: normal !important; }
+
+.col-sm-1,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9 {
+  padding: 5px !important; }
 
 hr {
-  margin: 10px 0px 10px 0px !important; }
+  margin: 10px 0 !important; }
 
-.panel-heading {
-  font-weight: bold; }
+.panel {
+  border: none !important;
+  margin-bottom: 0px !important; }
+  .panel a {
+    font-weight: bold; }
+    .panel a:focus, .panel a:hover {
+      text-decoration: none !important; }
+  .panel .panel-heading {
+    font-weight: bold !important;
+    background-color: #e7e7e7 !important;
+    color: #062f4f !important; }
+
+uib-accordion .panel-heading span.company-name {
+  font-weight: normal !important;
+  font-style: italic;
+  font-size: 0.8em; }
+uib-accordion .panel-heading span.employment-duration {
+  font-weight: normal !important;
+  font-style: italic;
+  font-size: 0.8em;
+  font-style: normal; }
+uib-accordion .panel-heading:focus, uib-accordion .panel-heading:hover {
+  background-color: #062f4f !important;
+  color: #ffffff !important;
+  cursor: pointer !important; }
 
 display-photo img {
   width: 190px;
-  height: 225px; }
+  height: 200px; }
 display-photo .col-sm-2 {
-  padding: 0px !important; }
+  padding: 0 !important; }
   display-photo .col-sm-2 .profile-pic {
     width: inherit; }
 
@@ -31,9 +83,16 @@ objective .col-sm-6 .panel .panel-body .row.author {
   text-align: right;
   font-style: italic; }
 
+current-status .col-sm-4 .panel .panel-heading {
+  font-size: 1.1em !important; }
 current-status .col-sm-4 .panel .panel-body h4 {
   margin-top: 0; }
 current-status .col-sm-4 .panel .panel-body span {
   font-weight: bold; }
+
+education .row .univ-name {
+  font-weight: normal !important;
+  font-style: italic;
+  font-size: 1em; }
 
 /*# sourceMappingURL=styles.css.map */

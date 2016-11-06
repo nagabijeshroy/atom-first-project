@@ -13,7 +13,7 @@ function achievements() {
 
     function link(scope, element, attrs) {
       scope.status ={
-        open:true
+        open:false
       }
     }
 }

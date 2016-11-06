@@ -2,33 +2,37 @@
     <div uib-accordion-group class="panel-default" is-open="status.open">
         <uib-accordion-heading>
             <span class="section-title">Education</span>
-            <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
+            <i class="pull-right glyphicon" ng-class="{'glyphicon glyphicon-minus': status.open, 'glyphicon glyphicon-plus': !status.open}"></i>
         </uib-accordion-heading>
-        <div class="panel-body">
-            <span>Master of Science in Computer Science</span>
-            <span>GPA: 3.7/4</span><br>
-            <span>University of North Carolina at Charlotte<br> Charlotte, NC</span>
-            <span>Visa Status: H1</span><br>
-            <hr>
-            <div class="row">
-                <div class="col-sm-6">
-                    <ul>
-                        <li>Big Data Analytics for Competitive Advantage</li>
-                        <li>Algorithms & Data Structures</li>
-                        <li>Visual Analytics</li>
-                        <li>Mobile Application Development</li>
-                        <li>Data Warehousing</li>
-                        <li>Database Systems</li>
-                    </ul>
-                </div>
-                <div class="col-sm-6">
-                    <ul>
-                        <li>Software Systems Design and Implementation</li>
-                        <li>Network Based Application Development</li>
-                        <li>Computer Communications and Networks</li>
-                        <li>Survey of Programming Languages</li>
-                    </ul>
-                </div>
+        <div class="row">
+            <div class="col-sm-8">
+                <label>Master of Science in Computer Science</label><br>
+                <label class="univ-name">University of North Carolina at Charlotte - Charlotte, NC</label>
+            </div>
+            <div class="col-sm-4">
+                <label>GPA: </label><span>3.7/4</span><br>
+                <label>Visa Status: </label><span>H1B</span>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-sm-6">
+                <ul>
+                    <li>Big Data Analytics for Competitive Advantage</li>
+                    <li>Algorithms & Data Structures</li>
+                    <li>Visual Analytics</li>
+                    <li>Mobile Application Development</li>
+                    <li>Data Warehousing</li>
+                </ul>
+            </div>
+            <div class="col-sm-6">
+                <ul>
+                    <li>Database Systems</li>
+                    <li>Software Systems Design and Implementation</li>
+                    <li>Network Based Application Development</li>
+                    <li>Computer Communications and Networks</li>
+                    <li>Survey of Programming Languages</li>
+                </ul>
             </div>
         </div>
     </div>

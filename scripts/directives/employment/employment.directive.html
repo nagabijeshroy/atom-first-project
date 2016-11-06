@@ -1,12 +1,15 @@
-<div class="panel panel-default">
-    <div class="panel-heading">Employment</div>
-    <div class="panel-body">
+<uib-accordion>
+    <div uib-accordion-group class="panel-default" is-open="status.open">
+        <uib-accordion-heading ng-click="display()">
+            <span>Employment</span><i class="pull-right glyphicon" ng-class="{'glyphicon glyphicon-minus': status.open, 'glyphicon glyphicon-plus': !status.open}"></i>
+        </uib-accordion-heading>
+
         <uib-accordion>
-            <div uib-accordion-group class="panel-default" is-open="status.open">
-                <uib-accordion-heading>
-                    <span class="section-title">AngularJS & Java Web Developer</span>
-                    <span> Sogeti USA － Baltimore, MD</span><br />
-                    <span>February 2016 to Current</span><i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
+            <div uib-accordion-group class="panel-default"  is-open="status1.open">
+                <uib-accordion-heading ng-click="display(1)">
+                    <span class="section-title">AngularJS & Java Web Developer,</span>
+                    <span class="company-name"> Sogeti USA － Baltimore, MD</span>
+                    <span class="pull-right employment-duration">Feb 2016 to Current<i class="pull-right glyphicon" ng-class="{'glyphicon glyphicon-minus': status1.open, 'glyphicon glyphicon-plus': !status1.open}"></i></span>
                 </uib-accordion-heading>
                 <div class="panel-body">
                     <ul>
@@ -23,11 +26,11 @@
         </uib-accordion>
 
         <uib-accordion>
-            <div uib-accordion-group class="panel-default" is-open="status.open">
-                <uib-accordion-heading>
-                    <span class="section-title">Software Developer Intern</span>
-                    <span> AmerisourceBergen Corp － Charlotte, NC</span><br>
-                    <span>June 2015 to August 2015</span><i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
+            <div uib-accordion-group class="panel-default" is-open="status2.open">
+                <uib-accordion-heading ng-click="display(2)">
+                    <span class="section-title">Software Developer Intern,</span>
+                    <span class="company-name"> AmerisourceBergen Corp － Charlotte, NC</span>
+                    <span class="pull-right employment-duration">Jun '15 to Aug '15<i class="pull-right glyphicon" ng-class="{'glyphicon glyphicon-minus': status2.open, 'glyphicon glyphicon-plus': !status2.open}"></i></span>
                 </uib-accordion-heading>
                 <div class="panel-body">
                     <ul>
@@ -41,11 +44,11 @@
             </div>
         </uib-accordion>
         <uib-accordion>
-            <div uib-accordion-group class="panel-default" is-open="status.open">
-                <uib-accordion-heading>
-                    <span class="section-title">Web Developer</span>
-                    <span> Triveni Indian Students Association － Charlotte, NC</span><br>
-                    <span>December 2014 to December 2015</span><i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
+            <div uib-accordion-group class="panel-default" is-open="status3.open">
+                <uib-accordion-heading ng-click="display(3)">
+                    <span class="section-title">Web Developer,</span>
+                    <span class="company-name"> Triveni Indian Students Association － Charlotte, NC</span>
+                    <span class="pull-right employment-duration">Dec '14 to Dec '15<i class="pull-right glyphicon" ng-class="{'glyphicon glyphicon-minus': status3.open, 'glyphicon glyphicon-plus': !status3.open}"></i></span>
                 </uib-accordion-heading>
                 <div class="panel-body">
                     <ul>
@@ -57,11 +60,11 @@
         </uib-accordion>
 
         <uib-accordion>
-            <div uib-accordion-group class="panel-default" is-open="status.open">
-                <uib-accordion-heading>
-                    <span class="section-title">Software Developer</span>
-                    <span> Tata Consultancy Services － Hyderabad, India</span><br>
-                    <span>November 2013 to July 2014</span><i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
+            <div uib-accordion-group class="panel-default" is-open="status4.open">
+                <uib-accordion-heading ng-click="display(4)">
+                    <span class="section-title">Software Developer,</span>
+                    <span class="company-name"> Tata Consultancy Services － Hyderabad, India</span>
+                    <span class="pull-right employment-duration">Nov '13 to Jul '14<i class="pull-right glyphicon" ng-class="{'glyphicon glyphicon-minus': status4.open, 'glyphicon glyphicon-plus': !status4.open}"></i></span>
                 </uib-accordion-heading>
                 <div class="panel-body">
                     <ul>
@@ -76,11 +79,11 @@
             </div>
         </uib-accordion>
         <uib-accordion>
-            <div uib-accordion-group class="panel-default" is-open="status.open">
-                <uib-accordion-heading>
-                    <span class="section-title">Software Developer</span>
-                    <span> Sree Vidyanikethan Educational Institutions － Tirupati, India</span><br />
-                    <span>December 2012 to August 2013</span><i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
+            <div uib-accordion-group class="panel-default" is-open="status5.open">
+                <uib-accordion-heading ng-click="display(5)">
+                    <span class="section-title">Software Developer,</span>
+                    <span class="company-name"> Sree Vidyanikethan Educational Institutions － Tirupati, India</span>
+                    <span class="pull-right employment-duration">Dec '12 to Aug '13<i class="pull-right glyphicon" ng-class="{'glyphicon glyphicon-minus': status5.open, 'glyphicon glyphicon-plus': !status5.open}"></i></span>
                 </uib-accordion-heading>
                 <div class="panel-body">
                     <ul>
@@ -93,6 +96,5 @@
                 </div>
             </div>
         </uib-accordion>
-
     </div>
-</div>
+</uib-accordion>

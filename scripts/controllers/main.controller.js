@@ -1,7 +1,6 @@
 angular
   .module("app.myPortfolio")
   .controller("MainController",MainController);
-
-  function MainController(){
-
+MainController.$inject = ['$scope'];
+  function MainController($scope){
   }

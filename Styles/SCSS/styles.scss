@@ -1,38 +1,129 @@
 $white: #ffffff;
+$black: #595a51;
 $sectionMarginTop: 20px;
 $sectionMarginBottom: 20px;
 $sectionMarginRight: 20px;
 $sectionMarginBottom: 20px;
 $siteMargin: 20px;
+$headerColor: #062f4f;
+$hoverFontColor: $white;
+$siteBackground: rgb(231, 233, 236);
 $rowBackground: rgba(233,233,224,1);
+$panelHeadingBackground: #e7e7e7;
+$panelHeadingHover: $headerColor;
+$panelHeadingFontColor: $headerColor;
+$font-family: 'helvetica neue', Helvetica, Arial;
+@mixin company-name($font-size) {
+    font-weight: normal !important;
+    font-style: italic;
+    font-size: $font-size;
+}
+
 body {
     .navbar {
-        margin: 0px auto;
+        margin: 0 auto;
+        background: $headerColor;
     }
-    .container.profile{
-      margin-top:50px;
-      .row.header{
-        margin: $sectionMarginTop 0px $sectionMarginBottom 0px;
-      }
+    font-family: $font-family !important;
+
+    .navbar-header {
+        .navbar-brand {
+            color: $white;
+        }
+    }
+
+    .container.profile {
+        margin-top: 50px;
+
+        .row.header {
+            margin: $sectionMarginTop 0px 0px 0px;
+        }
     }
 }
 
-hr{
-  margin: 10px 0px 10px 0px !important;
+ul.nav.navbar-nav {
+    a {
+        color: $white !important;
+    }
+
+    li.active a {
+        color: $headerColor !important;
+    }
 }
 
-.panel-heading{
-  font-weight:bold;
+.glyphicon.glyphicon-minus,
+.glyphicon.glyphicon-plus {
+    padding-left: 10px;
+    font-weight: normal !important;
+}
+
+.col-sm-1,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9 {
+    padding: 5px !important;
+}
+
+hr {
+    margin: 10px 0 !important;
+}
+
+.panel {
+    border: none !important;
+    margin-bottom: 0px !important;
+    a {
+        font-weight: bold;
+
+        &:focus,
+        &:hover {
+            text-decoration: none !important;
+        }
+    }
+
+    .panel-heading {
+        font-weight: bold !important;
+        background-color: $panelHeadingBackground !important;
+        color: $panelHeadingFontColor !important;
+    }
+}
+
+uib-accordion {
+    .panel-heading {
+        span.company-name {
+            @include company-name(0.8em);
+        }
+
+        span.employment-duration {
+            @include company-name(0.8em);
+            font-style: normal;
+        }
+
+        &:focus,
+        &:hover {
+            background-color: $panelHeadingHover !important;
+            color: $hoverFontColor !important;
+            cursor: pointer !important;
+        }
+    }
 }
 
 display-photo {
     img {
         width: 190px;
-        height: 225px;
+        height: 200px;
     }
 
     .col-sm-2 {
-      padding: 0px !important;
+        padding: 0 !important;
+
         .profile-pic {
             width: inherit;
         }
@@ -42,19 +133,21 @@ display-photo {
 objective {
     .col-sm-6 {
         .panel {
-          .panel-heading{
-            span{
-               font-weight: bold;
-               margin-top: 0;
-               font-size: 24px;
-             }
-          }
+            .panel-heading {
+                span {
+                    font-weight: bold;
+                    margin-top: 0;
+                    font-size: 24px;
+                }
+            }
+
             .panel-body {
                 .row {
                     width: 100%;
                     margin: 3px 0;
                     font-size: 0.9em;
                 }
+
                 .row.author {
                     text-align: right;
                     font-style: italic;
@@ -67,6 +160,10 @@ objective {
 current-status {
     .col-sm-4 {
         .panel {
+            .panel-heading {
+                font-size: 1.1em !important;
+            }
+
             .panel-body {
                 h4 {
                     margin-top: 0;
@@ -78,4 +175,15 @@ current-status {
             }
         }
     }
+}
+
+education{
+  .row{
+      .title{
+
+      }
+      .univ-name{
+        @include company-name(1em);
+      }
+  }
 }
