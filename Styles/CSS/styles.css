@@ -1,5 +1,6 @@
+@import url("https://fonts.googleapis.com/css?family=Work+Sans");
 body {
-  font-family: "helvetica neue", Helvetica, Arial !important; }
+  font-family: "Work Sans", sans-serif !important; }
   body .navbar {
     margin: 0 auto;
     background: #062f4f; }
@@ -94,5 +95,52 @@ education .row .univ-name {
   font-weight: normal !important;
   font-style: italic;
   font-size: 1em; }
+
+.tangcloud {
+  text-align: center;
+  margin: 0px auto; }
+
+.tangcloud-item-1 {
+  font-size: 0.7em;
+  color: #5D535E; }
+
+.tangcloud-item-2 {
+  font-size: 0.8em;
+  color: #1995AD; }
+
+.tangcloud-item-3 {
+  font-size: 0.9em;
+  color: #DE7A22; }
+
+.tangcloud-item-4 {
+  font-size: 1em;
+  color: #34675C; }
+
+.tangcloud-item-5 {
+  font-size: 1.1em;
+  color: #324851; }
+
+.tangcloud-item-6 {
+  font-size: 1.1em;
+  color: #3F681E; }
+
+.tangcloud-item-7 {
+  font-size: 1.3em;
+  color: #004445; }
+
+.tangcloud-item-8 {
+  font-size: 1.2em;
+  color: #375E97; }
+
+.tangcloud-item-9 {
+  font-size: 1.5em;
+  color: #9B4F0F; }
+
+.tangcloud-item-10 {
+  font-size: 1.6em;
+  color: #8D230F; }
+
+.tangcloud-item-hidden {
+  visibility: visible; }
 
 /*# sourceMappingURL=styles.css.map */
