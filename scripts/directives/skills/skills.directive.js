@@ -13,7 +13,7 @@ function skills() {
 
     function link(scope, element, attrs) {
       scope.status ={
-        open:true
+        isCollapsed:false
       }
     }
 }

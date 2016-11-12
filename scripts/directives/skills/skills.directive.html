@@ -1,21 +1,26 @@
-<uib-accordion>
-    <div uib-accordion-group class="panel-default" is-open="status.open">
-        <uib-accordion-heading>
-            <span class="section-title">Skills</span>
-            <i class="pull-right glyphicon" ng-class="{'glyphicon glyphicon-minus': status.open, 'glyphicon glyphicon-plus': !status.open}"></i>
-        </uib-accordion-heading>
-        <tang-cloud words="words"></tang-cloud>
-        <hr>
-        <ul>
-            <li>Java expert</li>
-            <li>AngularJS and JavaScript expert</li>
-            <li>Interface design and implementation</li>
-            <li>Proficient in HTML and CSS</li>
-            <li>SASS</li>
-            <li>SQL expert</li>
-            <li>Agile development methodologies</li>
-            <li>Requirements analysis and design phases</li>
-            <li>Team player</li>
-        </ul>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <span class="section-title">Skills</span>
+        <span class="pull-right">
+          <span><i class="glyphicon" ng-class="{'glyphicon glyphicon glyphicon-plus-sign': status.isEmpty, 'glyphicon glyphicon-edit': !status.isEmpty}"></i></span>
+          <ng-include src="'scripts/resources/views/accordion-icon.html'" ng-click="status.isCollapsed = !status.isCollapsed" />
+        </span>
     </div>
-</uib-accordion>
+    <div uib-collapse="status.isCollapsed">
+        <div class="panel-body">
+            <tang-cloud words="words"></tang-cloud>
+            <hr>
+            <ul>
+                <li>Java expert</li>
+                <li>AngularJS and JavaScript expert</li>
+                <li>Interface design and implementation</li>
+                <li>Proficient in HTML and CSS</li>
+                <li>SASS</li>
+                <li>SQL expert</li>
+                <li>Agile development methodologies</li>
+                <li>Requirements analysis and design phases</li>
+                <li>Team player</li>
+            </ul>
+        </div>
+    </div>
+</div>

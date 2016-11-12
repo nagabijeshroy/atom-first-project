@@ -13,32 +13,23 @@ function employment() {
 
     function link(scope, element, attrs) {
       scope.status = {
-        open:false
+        isCollapsed:true
       }
       scope.status1 ={
-        open:false
+      isCollapsed:true
       }
       scope.status2 ={
-        open:false
+        isCollapsed:true
       }
       scope.status3 ={
-        open:false
+        isCollapsed:true
       }
       scope.status4 ={
-        open:false
+        isCollapsed:true
       }
       scope.status5 ={
-        open:false
+        isCollapsed:true
       }
-      scope.display = function(statusNum){
-        if(!statusNum){
-          statusNum = '';
-        }
-        if(!scope['status'+statusNum].open){
-          scope['status'+statusNum].open = true;
-        }else{
-          scope['status'+statusNum].open = false;
-        }
-      }
+
     }
 }

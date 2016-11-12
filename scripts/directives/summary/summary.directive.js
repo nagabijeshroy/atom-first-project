@@ -12,7 +12,8 @@ function summary() {
 
     function link(scope, element, attrs) {
         scope.status = {
-            open: true
+            isCollapsed: false,
+            isEmpty: false
         }
     }
 }

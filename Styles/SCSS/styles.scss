@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+@import url( 'https://fonts.googleapis.com/css?family=Work+Sans');
 $white: #ffffff;
 $black: #595a51;
 $sectionMarginTop: 20px;
@@ -14,6 +14,7 @@ $panelHeadingBackground: #e7e7e7;
 $panelHeadingHover: $headerColor;
 $panelHeadingFontColor: $headerColor;
 $font-family: 'Work Sans', sans-serif;
+$font-icon-hover-color: rgb(67, 137, 152);
 @mixin company-name($font-size) {
     font-weight: normal !important;
     font-style: italic;
@@ -37,7 +38,7 @@ body {
         margin-top: 50px;
 
         .row.header {
-            margin: $sectionMarginTop 0px 0px 0px;
+            margin: $sectionMarginTop 0 0;
         }
     }
 }
@@ -52,10 +53,17 @@ ul.nav.navbar-nav {
     }
 }
 
-.glyphicon.glyphicon-minus,
-.glyphicon.glyphicon-plus {
+.glyphicon.glyphicon-triangle-bottom,
+.glyphicon.glyphicon-triangle-right {
     padding-left: 10px;
     font-weight: normal !important;
+    &:hover{
+      color: $font-icon-hover-color !important;
+    }
+}
+
+.glyphicon.glyphicon-edit {
+    @extend .glyphicon.glyphicon-triangle-right;
 }
 
 .col-sm-1,
@@ -79,25 +87,13 @@ hr {
 
 .panel {
     border: none !important;
-    margin-bottom: 0px !important;
-    a {
-        font-weight: bold;
-
-        &:focus,
-        &:hover {
-            text-decoration: none !important;
-        }
-    }
+    margin-bottom: 0 !important;
 
     .panel-heading {
         font-weight: bold !important;
         background-color: $panelHeadingBackground !important;
         color: $panelHeadingFontColor !important;
-    }
-}
 
-uib-accordion {
-    .panel-heading {
         span.company-name {
             @include company-name(0.8em);
         }
@@ -113,6 +109,12 @@ uib-accordion {
             color: $hoverFontColor !important;
             cursor: pointer !important;
         }
+    }
+
+    .panel-heading.no-hover {
+        font-weight: bold !important;
+        background-color: $panelHeadingBackground !important;
+        color: $panelHeadingFontColor !important;
     }
 }
 
@@ -178,20 +180,19 @@ current-status {
     }
 }
 
-education{
-  .row{
-      .title{
+education {
+    .row {
+        .title {}
 
-      }
-      .univ-name{
-        @include company-name(1em);
-      }
-  }
+        .univ-name {
+            @include company-name(1em);
+        }
+    }
 }
 
 .tangcloud {
     text-align: center;
-    margin: 0px auto;
+    margin: 0 auto;
 }
 
 .tangcloud-item-1 {

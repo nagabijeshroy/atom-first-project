@@ -9,17 +9,22 @@ body {
   body .container.profile {
     margin-top: 50px; }
     body .container.profile .row.header {
-      margin: 20px 0px 0px 0px; }
+      margin: 20px 0 0; }
 
 ul.nav.navbar-nav a {
   color: #ffffff !important; }
 ul.nav.navbar-nav li.active a {
   color: #062f4f !important; }
 
-.glyphicon.glyphicon-minus,
-.glyphicon.glyphicon-plus {
+.glyphicon.glyphicon-triangle-bottom,
+.glyphicon.glyphicon-triangle-right,
+.glyphicon.glyphicon-edit {
   padding-left: 10px;
   font-weight: normal !important; }
+  .glyphicon.glyphicon-triangle-bottom:hover,
+  .glyphicon.glyphicon-triangle-right:hover,
+  .glyphicon.glyphicon-edit:hover {
+    color: #438998 !important; }
 
 .col-sm-1,
 .col-sm-10,
@@ -40,29 +45,28 @@ hr {
 
 .panel {
   border: none !important;
-  margin-bottom: 0px !important; }
-  .panel a {
-    font-weight: bold; }
-    .panel a:focus, .panel a:hover {
-      text-decoration: none !important; }
+  margin-bottom: 0 !important; }
   .panel .panel-heading {
     font-weight: bold !important;
     background-color: #e7e7e7 !important;
     color: #062f4f !important; }
-
-uib-accordion .panel-heading span.company-name {
-  font-weight: normal !important;
-  font-style: italic;
-  font-size: 0.8em; }
-uib-accordion .panel-heading span.employment-duration {
-  font-weight: normal !important;
-  font-style: italic;
-  font-size: 0.8em;
-  font-style: normal; }
-uib-accordion .panel-heading:focus, uib-accordion .panel-heading:hover {
-  background-color: #062f4f !important;
-  color: #ffffff !important;
-  cursor: pointer !important; }
+    .panel .panel-heading span.company-name {
+      font-weight: normal !important;
+      font-style: italic;
+      font-size: 0.8em; }
+    .panel .panel-heading span.employment-duration {
+      font-weight: normal !important;
+      font-style: italic;
+      font-size: 0.8em;
+      font-style: normal; }
+    .panel .panel-heading:focus, .panel .panel-heading:hover {
+      background-color: #062f4f !important;
+      color: #ffffff !important;
+      cursor: pointer !important; }
+  .panel .panel-heading.no-hover {
+    font-weight: bold !important;
+    background-color: #e7e7e7 !important;
+    color: #062f4f !important; }
 
 display-photo img {
   width: 190px;
@@ -98,7 +102,7 @@ education .row .univ-name {
 
 .tangcloud {
   text-align: center;
-  margin: 0px auto; }
+  margin: 0 auto; }
 
 .tangcloud-item-1 {
   font-size: 0.7em;
