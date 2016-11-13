@@ -7,29 +7,14 @@ function employment() {
         link: link,
         templateUrl: 'scripts/directives/employment/employment.directive.html',
         restrict: 'EA',
-        scope: {}
+        scope: {},
+        controller: EmploymentController,
+        controllerAs: 'vm',
+        bindToController: true
     };
     return directive;
 
     function link(scope, element, attrs) {
-      scope.status = {
-        isCollapsed:true
-      }
-      scope.status1 ={
-      isCollapsed:true
-      }
-      scope.status2 ={
-        isCollapsed:true
-      }
-      scope.status3 ={
-        isCollapsed:true
-      }
-      scope.status4 ={
-        isCollapsed:true
-      }
-      scope.status5 ={
-        isCollapsed:true
-      }
 
     }
 }

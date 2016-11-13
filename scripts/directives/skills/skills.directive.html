@@ -2,24 +2,16 @@
     <div class="panel-heading">
         <span class="section-title">Skills</span>
         <span class="pull-right">
-          <span><i class="glyphicon" ng-class="{'glyphicon glyphicon glyphicon-plus-sign': status.isEmpty, 'glyphicon glyphicon-edit': !status.isEmpty}"></i></span>
-          <ng-include src="'scripts/resources/views/accordion-icon.html'" ng-click="status.isCollapsed = !status.isCollapsed" />
+          <span><i class="glyphicon" ng-class="{'glyphicon glyphicon glyphicon-plus-sign': vm.status.isEmpty, 'glyphicon glyphicon-edit': !vm.status.isEmpty}"></i></span>
+          <ng-include src="'scripts/resources/views/accordion-icon.html'" ng-click="vm.status.isCollapsed = !vm.status.isCollapsed" />
         </span>
     </div>
-    <div uib-collapse="status.isCollapsed">
+    <div uib-collapse="vm.status.isCollapsed">
         <div class="panel-body">
-            <tang-cloud words="words"></tang-cloud>
+            <tang-cloud words="vm.skillsData.tags"></tang-cloud>
             <hr>
             <ul>
-                <li>Java expert</li>
-                <li>AngularJS and JavaScript expert</li>
-                <li>Interface design and implementation</li>
-                <li>Proficient in HTML and CSS</li>
-                <li>SASS</li>
-                <li>SQL expert</li>
-                <li>Agile development methodologies</li>
-                <li>Requirements analysis and design phases</li>
-                <li>Team player</li>
+                <li ng-repeat="skillItem in vm.skillsData.skillsList">{{skillItem}}</li>
             </ul>
         </div>
     </div>

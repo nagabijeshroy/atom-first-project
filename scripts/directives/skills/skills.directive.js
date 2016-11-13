@@ -7,13 +7,14 @@ function skills() {
         link: link,
         templateUrl: 'scripts/directives/skills/skills.directive.html',
         restrict: 'EA',
-        scope: {}
+        scope: {},
+        controller: SkillsController,
+        controllerAs: 'vm',
+        bindToController: true
     };
     return directive;
 
     function link(scope, element, attrs) {
-      scope.status ={
-        isCollapsed:false
-      }
+
     }
 }

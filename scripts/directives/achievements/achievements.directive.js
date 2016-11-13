@@ -7,13 +7,14 @@ function achievements() {
         link: link,
         templateUrl: 'scripts/directives/achievements/achievements.directive.html',
         restrict: 'EA',
-        scope: {}
+        scope: {},
+        controller: AchievementsController,
+        controllerAs: 'vm',
+        bindToController: true
     };
     return directive;
 
     function link(scope, element, attrs) {
-      scope.status ={
-        isCollapsed:true
-      }
+
     }
 }

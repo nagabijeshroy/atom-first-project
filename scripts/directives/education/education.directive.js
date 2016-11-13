@@ -7,13 +7,14 @@ function education() {
         link: link,
         templateUrl: 'scripts/directives/education/education.directive.html',
         restrict: 'EA',
-        scope: {}
+        scope: {},
+        controller: EducationController,
+        controllerAs: 'vm',
+        bindToController: true
     };
     return directive;
 
     function link(scope, element, attrs) {
-      scope.status ={
-        isCollapsed:true
-      }
+
     }
 }

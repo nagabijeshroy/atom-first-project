@@ -2,41 +2,47 @@
     <div class="panel-heading">
         <span class="section-title">Education</span>
         <span class="pull-right">
-          <span><i class="glyphicon" ng-class="{'glyphicon glyphicon glyphicon-plus-sign': status.isEmpty, 'glyphicon glyphicon-edit': !status.isEmpty}"></i></span>
-          <ng-include src="'scripts/resources/views/accordion-icon.html'" ng-click="status.isCollapsed = !status.isCollapsed" />
+          <span>
+          <span><i class="glyphicon glyphicon-plus-sign"></i></span>
+        </span>
+        <ng-include src="'scripts/resources/views/accordion-icon.html'" ng-click="vm.status.isCollapsed = !vm.status.isCollapsed" />
         </span>
     </div>
-    <div uib-collapse="status.isCollapsed">
+    <div uib-collapse="vm.status.isCollapsed">
         <div class="panel-body">
-            <div class="row">
-                <div class="col-sm-8">
-                    <label>Master of Science in Computer Science</label><br>
-                    <label class="univ-name">University of North Carolina at Charlotte - Charlotte, NC</label>
+            <div class="panel panel-default" ng-repeat="educationListItem in vm.educationData.educationList">
+                <div class="panel-heading">
+                    <span class="section-title">{{educationListItem.course.degreeName}}</span>
+                    <span class="pull-right">
+                    <span class="employment-duration">{{educationListItem.duration.from.month}}' {{educationListItem.duration.from.year}} to {{educationListItem.duration.to.month}}' {{educationListItem.duration.to.year}} </span>
+                    <span><i class="glyphicon glyphicon-edit"></i></span>
+                    <i class="pull-right glyphicon" ng-click="educationListItem.isCollapsed = !educationListItem.isCollapsed" ng-class="{'glyphicon glyphicon-triangle-bottom': !educationListItem.isCollapsed, 'glyphicon glyphicon-triangle-right': educationListItem.isCollapsed}"></i>
+                    </span>
                 </div>
-                <div class="col-sm-4">
-                    <label>GPA: </label><span>3.7/4</span><br>
-                    <label>Visa Status: </label><span>H1B</span>
-                </div>
-            </div>
-            <hr>
-            <div class="row">
-                <div class="col-sm-6">
-                    <ul>
-                        <li>Big Data Analytics for Competitive Advantage</li>
-                        <li>Algorithms & Data Structures</li>
-                        <li>Visual Analytics</li>
-                        <li>Mobile Application Development</li>
-                        <li>Data Warehousing</li>
-                    </ul>
-                </div>
-                <div class="col-sm-6">
-                    <ul>
-                        <li>Database Systems</li>
-                        <li>Software Systems Design and Implementation</li>
-                        <li>Network Based Application Development</li>
-                        <li>Computer Communications and Networks</li>
-                        <li>Survey of Programming Languages</li>
-                    </ul>
+                <div uib-collapse="educationListItem.isCollapsed">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-sm-8">
+                                <label class="univ-name">{{educationListItem.institution.name}} - {{educationListItem.institution.city}}, {{educationListItem.institution.state}} </label>
+                            </div>
+                            <div class="col-sm-4">
+                                <label>GPA: </label><span>{{educationListItem.course.gpa}}</span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <ul>
+                                    <li ng-repeat="courseItem in educationListItem.course.courseList.slice(0, educationListItem.course.courseList.length / 2)">{{courseItem}}</li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6">
+                                <ul>
+                                    <li ng-repeat="courseItem in educationListItem.course.courseList.slice(educationListItem.course.courseList.length / 2, educationListItem.course.courseList.length)">{{courseItem}}</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

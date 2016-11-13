@@ -7,13 +7,13 @@ function summary() {
         link: link,
         templateUrl: 'scripts/directives/summary/summary.directive.html',
         restrict: 'EA',
+        scope: {},
+        controller: SummaryController,
+        controllerAs: 'vm',
+        bindToController: true // because the scope is isolated
     };
     return directive;
 
     function link(scope, element, attrs) {
-        scope.status = {
-            isCollapsed: false,
-            isEmpty: false
-        }
     }
 }

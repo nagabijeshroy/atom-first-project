@@ -2,15 +2,18 @@
     <div class="panel-heading">
         <span class="section-title">Accomplishments</span>
         <span class="pull-right">
-          <span><i class="glyphicon" ng-class="{'glyphicon glyphicon glyphicon-plus-sign': status.isEmpty, 'glyphicon glyphicon-edit': !status.isEmpty}"></i></span>
-          <ng-include src="'scripts/resources/views/accordion-icon.html'" ng-click="status.isCollapsed = !status.isCollapsed" />
+          <span><i class="glyphicon" ng-class="{'glyphicon glyphicon glyphicon-plus-sign': vm.status.isEmpty, 'glyphicon glyphicon-edit': !vm.status.isEmpty}"></i></span>
+          <ng-include src="'scripts/resources/views/accordion-icon.html'" ng-click="vm.status.isCollapsed = !vm.status.isCollapsed" />
         </span>
     </div>
-    <div uib-collapse="status.isCollapsed">
+    <div uib-collapse="vm.status.isCollapsed">
         <div class="panel-body">
-            <p>Solved the problem to export reports generated from MicroStrategy server, embedded in the portal by creating a customized API and hence projected a lot in terms of cost savings to the client</p>
+            <span ng-repeat="achievementItem in vm.achievementsData.achievementsList">
+            <p>{{achievementItem}}</p>
             <hr>
-            <p>Was awarded 5 times as best performer for my contribution towards the successful delivery of the project </p>
+            <span>
+          </div>
+
         </div>
     </div>
 </div>

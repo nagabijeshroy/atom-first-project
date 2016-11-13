@@ -62,7 +62,7 @@ ul.nav.navbar-nav {
     }
 }
 
-.glyphicon.glyphicon-edit {
+.glyphicon.glyphicon-edit,.glyphicon.glyphicon-plus-sign {
     @extend .glyphicon.glyphicon-triangle-right;
 }
 
@@ -101,6 +101,7 @@ hr {
         span.employment-duration {
             @include company-name(0.8em);
             font-style: normal;
+            font-weight: bold !important;
         }
 
         &:focus,
@@ -137,7 +138,7 @@ objective {
     .col-sm-6 {
         .panel {
             .panel-heading {
-                span {
+                span.full-name {
                     font-weight: bold;
                     margin-top: 0;
                     font-size: 24px;

@@ -10,9 +10,6 @@ function tangCloud($interpolate, $compile, $timeout) {
         scope: {
             words: '='
         },
-        controller: TangCloudController,
-        controllerAs: 'vm',
-        bindToController: true,
         template: function(tElement, tAttrs) {
             var isClickable = angular.isDefined(tAttrs.onClick);
 

@@ -18,12 +18,14 @@ ul.nav.navbar-nav li.active a {
 
 .glyphicon.glyphicon-triangle-bottom,
 .glyphicon.glyphicon-triangle-right,
-.glyphicon.glyphicon-edit {
+.glyphicon.glyphicon-edit,
+.glyphicon.glyphicon-plus-sign {
   padding-left: 10px;
   font-weight: normal !important; }
   .glyphicon.glyphicon-triangle-bottom:hover,
   .glyphicon.glyphicon-triangle-right:hover,
-  .glyphicon.glyphicon-edit:hover {
+  .glyphicon.glyphicon-edit:hover,
+  .glyphicon.glyphicon-plus-sign:hover {
     color: #438998 !important; }
 
 .col-sm-1,
@@ -58,7 +60,8 @@ hr {
       font-weight: normal !important;
       font-style: italic;
       font-size: 0.8em;
-      font-style: normal; }
+      font-style: normal;
+      font-weight: bold !important; }
     .panel .panel-heading:focus, .panel .panel-heading:hover {
       background-color: #062f4f !important;
       color: #ffffff !important;
@@ -76,7 +79,7 @@ display-photo .col-sm-2 {
   display-photo .col-sm-2 .profile-pic {
     width: inherit; }
 
-objective .col-sm-6 .panel .panel-heading span {
+objective .col-sm-6 .panel .panel-heading span.full-name {
   font-weight: bold;
   margin-top: 0;
   font-size: 24px; }

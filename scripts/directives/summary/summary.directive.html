@@ -2,27 +2,14 @@
     <div class="panel-heading">
         <span class="section-title">Summary</span>
         <span class="pull-right">
-          <span><i class="glyphicon" ng-class="{'glyphicon glyphicon glyphicon-plus-sign': status.isEmpty, 'glyphicon glyphicon-edit': !status.isEmpty}"></i></span>
-          <ng-include src="'scripts/resources/views/accordion-icon.html'" ng-click="status.isCollapsed = !status.isCollapsed" />
+          <span><i class="glyphicon" ng-class="{'glyphicon glyphicon glyphicon-plus-sign': vm.status.isEmpty, 'glyphicon glyphicon-edit': !vm.status.isEmpty}"></i></span>
+          <ng-include src="'scripts/resources/views/accordion-icon.html'" ng-click="vm.status.isCollapsed = !vm.status.isCollapsed" />
         </span>
     </div>
-    <div uib-collapse="status.isCollapsed">
+    <div uib-collapse="vm.status.isCollapsed">
         <div class="panel-body">
             <ul>
-                <li>Software developer with two and half years of professional IT experience with Java/J2EE frameworks including Spring, Hibernate, RESTful Web Services with exceptional skills in Analysis, Design and Development of high scalable n-tiered
-                    Web Applications
-                </li>
-                <li>Experience in developing User Interfaces using AngularJS, AJAX, HTML5, Bootstrap, CSS3, JavaScript and JQuery</li>
-                <li>Extensive work experience with Agile (Scrum) methodologies</li>
-                <li>Good Experience in MVC framework to reduce the complexity and gain full control over the application</li>
-                <li>Experience in working with IBM WebSphere, JBOSS and TOMCAT</li>
-                <li>Experience in working with Oracle, MySQL and SQL Server</li>
-                <li>Excellent hands on working with IBM RAD, Eclipse, and NetBeans IDE</li>
-                <li>Good working experience on dependency injection framework</li>
-                <li>Hands on experience writing JUnit tests Sound knowledge and understanding of object oriented design and programming</li>
-                <li>Experience Good working experience of ORM framework</li>
-                <li>Experience working with GIT, SVN</li>
-                <li>Excellent Interpersonal and Communication skills coupled with strong technical and problem solving capabilities</li>
+              <li ng-repeat="item in vm.summaryData.descriptionList">{{item}}</li>
             </ul>
         </div>
     </div>
