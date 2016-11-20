@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css?family=Work+Sans");
+body {
+  font-family: "Segoe UI", "Segoe", "SegoeUI-Regular-final", Tahoma, Helvetica, Arial, sans-serif !important; }
+  body .navbar {
+    margin: 0 auto;
+    background: #062f4f; }
+  body .navbar-header .navbar-brand {
+    color: #ffffff; }
+  body .container.profile {
+    margin-top: 50px; }
+    body .container.profile .row.header {
+      margin: 20px 0 0; }
+
+ul.nav.navbar-nav a {
+  color: #ffffff !important; }
+ul.nav.navbar-nav li.active a {
+  color: #062f4f !important; }
+
+.glyphicon.glyphicon-triangle-bottom,
+.glyphicon.glyphicon-triangle-right,
+.glyphicon.glyphicon-edit,
+.glyphicon.glyphicon-plus-sign {
+  padding-left: 10px;
+  font-weight: normal !important; }
+  .glyphicon.glyphicon-triangle-bottom:hover,
+  .glyphicon.glyphicon-triangle-right:hover,
+  .glyphicon.glyphicon-edit:hover,
+  .glyphicon.glyphicon-plus-sign:hover {
+    color: #438998 !important;
+    cursor: pointer !important; }
+
+.col-sm-1,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9 {
+  padding: 5px !important; }
+
+hr {
+  margin: 10px 0 !important; }
+
+.panel {
+  border: none !important;
+  margin-bottom: 0 !important; }
+  .panel .panel-heading {
+    font-weight: bold !important;
+    background-color: #e7e7e7 !important;
+    color: #062f4f !important; }
+    .panel .panel-heading span.company-name {
+      font-weight: normal !important;
+      font-style: italic;
+      font-size: 0.9em; }
+    .panel .panel-heading span.employment-duration {
+      font-weight: normal !important;
+      font-style: italic;
+      font-size: 0.9em;
+      font-style: normal;
+      font-weight: bold !important; }
+    .panel .panel-heading:focus, .panel .panel-heading:hover {
+      background-color: #062f4f !important;
+      color: #ffffff !important;
+      cursor: auto !important; }
+  .panel .panel-heading.no-hover {
+    background-color: #062f4f !important;
+    color: #ffffff !important;
+    cursor: auto !important; }
+  .panel .panel-heading.active {
+    background-color: #062f4f !important;
+    color: #ffffff !important;
+    cursor: auto !important; }
+
+display-photo img {
+  width: 190px;
+  height: 200px; }
+display-photo .col-sm-2 {
+  padding: 0 !important; }
+  display-photo .col-sm-2 .profile-pic {
+    width: inherit; }
+
+objective .col-sm-6 .panel .panel-heading span.full-name {
+  font-weight: bold;
+  margin-top: 0;
+  font-size: 24px; }
+objective .col-sm-6 .panel .panel-body .row {
+  width: 100%;
+  margin: 3px 0;
+  font-size: 0.9em; }
+objective .col-sm-6 .panel .panel-body .row.author {
+  text-align: right;
+  font-style: italic; }
+
+current-status .col-sm-4 .panel .panel-heading {
+  font-size: 1.1em !important; }
+current-status .col-sm-4 .panel .panel-body h4 {
+  margin-top: 0; }
+current-status .col-sm-4 .panel .panel-body span {
+  font-weight: bold; }
+
+education .row .univ-name {
+  font-weight: normal !important;
+  font-style: italic;
+  font-size: 1em; }
+
+.tangcloud {
+  text-align: center;
+  margin: 0 auto; }
+
+.tangcloud-item-1 {
+  font-size: 0.7em;
+  color: #5D535E; }
+
+.tangcloud-item-2 {
+  font-size: 0.8em;
+  color: #1995AD; }
+
+.tangcloud-item-3 {
+  font-size: 0.9em;
+  color: #DE7A22; }
+
+.tangcloud-item-4 {
+  font-size: 1em;
+  color: #34675C; }
+
+.tangcloud-item-5 {
+  font-size: 1.1em;
+  color: #324851; }
+
+.tangcloud-item-6 {
+  font-size: 1.1em;
+  color: #3F681E; }
+
+.tangcloud-item-7 {
+  font-size: 1.3em;
+  color: #004445; }
+
+.tangcloud-item-8 {
+  font-size: 1.2em;
+  color: #375E97; }
+
+.tangcloud-item-9 {
+  font-size: 1.5em;
+  color: #9B4F0F; }
+
+.tangcloud-item-10 {
+  font-size: 1.6em;
+  color: #8D230F; }
+
+.tangcloud-item-hidden {
+  visibility: visible; }
+
+/*# sourceMappingURL=styles.css.map */
