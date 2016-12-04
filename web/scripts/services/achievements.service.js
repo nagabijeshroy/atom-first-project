@@ -10,7 +10,7 @@ function AchievementsService($http, $q) {
 
     service.getAchievementsData = function() {
         var deferred = $q.defer();
-        return $http.get("/achievements")
+        return $http.get("/achievements/755613")
             .then(function(response) {
                 deferred.resolve(response.data);
                 return deferred.promise;

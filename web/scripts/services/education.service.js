@@ -9,7 +9,7 @@ function EducationService($http, $q) {
 
     service.getEducationData = function() {
       var deferred = $q.defer();
-      return $http.get("/education")
+      return $http.get("/education/755613")
         .then(function(response) {
             deferred.resolve(response.data);
             return deferred.promise;

@@ -9,7 +9,7 @@ function CurrentStatusService($http, $q) {
 
     service.getCurrentstatusData = function() {
         var deferred = $q.defer();
-        return $http.get("/current-status")
+        return $http.get("/currentStatus/755613")
           .then(function(response) {
               deferred.resolve(response.data);
               return deferred.promise;

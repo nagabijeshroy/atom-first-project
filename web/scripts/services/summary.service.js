@@ -10,7 +10,7 @@ function SummaryService($http, $q) {
 
     service.getSummaryData = function() {
         var deferred = $q.defer();
-        return $http.get("/summary")
+        return $http.get("/summary/755613")
             .then(function(response) {
                 deferred.resolve(response.data);
                 return deferred.promise;

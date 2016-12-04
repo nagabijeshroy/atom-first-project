@@ -8,7 +8,7 @@ function ObjectiveService($http, $q) {
   var service = this;
   service.getObjectiveData = function(){
     var deferred = $q.defer();
-    return $http.get("/objective")
+    return $http.get("/objective/755613")
         .then(function(response) {
             deferred.resolve(response.data);
             return deferred.promise;

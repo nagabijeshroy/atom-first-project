@@ -10,7 +10,7 @@ function SkillsService($http, $q) {
 
     service.getSkillsData = function() {
         var deferred = $q.defer();
-        return $http.get("/skills")
+        return $http.get("/skills/755613")
             .then(function(response) {
                 deferred.resolve(response.data);
                 return deferred.promise;

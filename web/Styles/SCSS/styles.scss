@@ -7,14 +7,16 @@ $sectionMarginRight: 20px;
 $sectionMarginBottom: 20px;
 $siteMargin: 20px;
 $headerColor: #062f4f;
+//$headerColor: rgb(51, 51, 51);
 $hoverFontColor: $white;
 $siteBackground: rgb(231, 233, 236);
 $rowBackground: rgba(233,233,224,1);
-$panelHeadingBackground: #e7e7e7;
+$panelHeadingBackground: #ccc;
 $panelHeadingHover: $headerColor;
-$panelHeadingFontColor: $headerColor;
+$panelHeadingFontColor: rgb(0,0,0);
 //$font-family: 'Work Sans', sans-serif;
-$font-family: 'Segoe UI','Segoe','SegoeUI-Regular-final',Tahoma,Helvetica,Arial,sans-serif;
+$font-family: "Segoe UI","wf_segoe-ui_normal","Arial",sans-serif;
+//$font-icon-hover-color: rgb(67, 137, 152);
 $font-icon-hover-color: rgb(67, 137, 152);
 @mixin company-name($font-size) {
     font-weight: normal !important;
@@ -98,18 +100,18 @@ hr {
 
     .panel-heading {
 
-        font-weight: bold !important;
+        font-weight: normal !important;
         background-color: $panelHeadingBackground !important;
         color: $panelHeadingFontColor !important;
 
         span.company-name {
-            @include company-name(0.9em);
+            @include company-name(0.8em);
         }
 
         span.employment-duration {
             @include company-name(0.9em);
             font-style: normal;
-            font-weight: bold !important;
+            font-weight: normal !important;
         }
 
         &:focus,
@@ -146,7 +148,7 @@ objective {
         .panel {
             .panel-heading {
                 span.full-name {
-                    font-weight: bold;
+                    font-weight: normal;
                     margin-top: 0;
                     font-size: 24px;
                 }
@@ -181,7 +183,7 @@ current-status {
                 }
 
                 span {
-                    font-weight: bold;
+                    font-weight: normal;
                 }
             }
         }

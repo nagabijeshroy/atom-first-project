@@ -9,7 +9,7 @@ function EmploymentService($http, $q) {
 
     service.getEmploymentData = function() {
         var deferred = $q.defer();
-        return $http.get("/employment")
+        return $http.get("/employment/755613")
             .then(function(response) {
                 deferred.resolve(response.data);
                 return deferred.promise;

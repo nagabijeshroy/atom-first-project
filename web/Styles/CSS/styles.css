@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Work+Sans");
 body {
-  font-family: "Segoe UI", "Segoe", "SegoeUI-Regular-final", Tahoma, Helvetica, Arial, sans-serif !important; }
+  font-family: "Segoe UI", "wf_segoe-ui_normal", "Arial", sans-serif !important; }
   body .navbar {
     margin: 0 auto;
     background: #062f4f; }
@@ -50,19 +50,19 @@ hr {
   border: none !important;
   margin-bottom: 0 !important; }
   .panel .panel-heading {
-    font-weight: bold !important;
-    background-color: #e7e7e7 !important;
-    color: #062f4f !important; }
+    font-weight: normal !important;
+    background-color: #ccc !important;
+    color: black !important; }
     .panel .panel-heading span.company-name {
       font-weight: normal !important;
       font-style: italic;
-      font-size: 0.9em; }
+      font-size: 0.8em; }
     .panel .panel-heading span.employment-duration {
       font-weight: normal !important;
       font-style: italic;
       font-size: 0.9em;
       font-style: normal;
-      font-weight: bold !important; }
+      font-weight: normal !important; }
     .panel .panel-heading:focus, .panel .panel-heading:hover {
       background-color: #062f4f !important;
       color: #ffffff !important;
@@ -85,7 +85,7 @@ display-photo .col-sm-2 {
     width: inherit; }
 
 objective .col-sm-6 .panel .panel-heading span.full-name {
-  font-weight: bold;
+  font-weight: normal;
   margin-top: 0;
   font-size: 24px; }
 objective .col-sm-6 .panel .panel-body .row {
@@ -101,7 +101,7 @@ current-status .col-sm-4 .panel .panel-heading {
 current-status .col-sm-4 .panel .panel-body h4 {
   margin-top: 0; }
 current-status .col-sm-4 .panel .panel-body span {
-  font-weight: bold; }
+  font-weight: normal; }
 
 education .row .univ-name {
   font-weight: normal !important;
