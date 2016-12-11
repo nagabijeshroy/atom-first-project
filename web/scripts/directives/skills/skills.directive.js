@@ -18,3 +18,21 @@ function skills() {
 
     }
 }
+
+angular
+    .module('app.myPortfolio')
+    .directive('integer', integer);
+
+function integer() {
+    return {
+        require: 'ngModel',
+        link: function(scope, element, attrs, ngModel) {
+            ngModel.$parsers.push(function(val) {
+                return val != null ? parseInt(val, 10) : null;
+            });
+            ngModel.$formatters.push(function(val) {
+                return val != null ? '' + val : null;
+            });
+        }
+    };
+}

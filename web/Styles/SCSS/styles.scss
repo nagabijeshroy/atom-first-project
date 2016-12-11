@@ -6,29 +6,26 @@ $sectionMarginBottom: 20px;
 $sectionMarginRight: 20px;
 $sectionMarginBottom: 20px;
 $siteMargin: 20px;
-$headerColor: #062f4f;
-//$headerColor: rgb(51, 51, 51);
+$headerColor: #062f4f; //$headerColor: rgb(51, 51, 51);
 $hoverFontColor: $white;
 $siteBackground: rgb(231, 233, 236);
 $rowBackground: rgba(233,233,224,1);
 $panelHeadingBackground: #ccc;
 $panelHeadingHover: $headerColor;
-$panelHeadingFontColor: rgb(0,0,0);
-//$font-family: 'Work Sans', sans-serif;
-$font-family: "Segoe UI","wf_segoe-ui_normal","Arial",sans-serif;
-//$font-icon-hover-color: rgb(67, 137, 152);
+$panelHeadingFontColor: rgb(0,0,0); //$font-family: 'Work Sans', sans-serif;
+$font-family: "Segoe UI","wf_segoe-ui_normal","Arial",sans-serif; //$font-icon-hover-color: rgb(67, 137, 152);
 $font-icon-hover-color: rgb(67, 137, 152);
 @mixin company-name($font-size) {
     font-weight: normal !important;
     font-style: italic;
     font-size: $font-size;
 }
-
-@mixin active-background(){
-  background-color: $panelHeadingHover !important;
-  color: $hoverFontColor !important;
-  cursor: auto !important;
+@mixin active-background() {
+    background-color: $panelHeadingHover !important;
+    color: $hoverFontColor !important;
+    cursor: auto !important;
 }
+
 body {
     .navbar {
         margin: 0 auto;
@@ -65,14 +62,45 @@ ul.nav.navbar-nav {
 .glyphicon.glyphicon-triangle-right {
     padding-left: 10px;
     font-weight: normal !important;
-    &:hover{
-      color: $font-icon-hover-color !important;
-      cursor: pointer !important;
+
+    &:hover {
+        color: $font-icon-hover-color !important;
+        cursor: pointer !important;
     }
 }
 
-.glyphicon.glyphicon-edit,.glyphicon.glyphicon-plus-sign {
+.glyphicon.glyphicon-edit,
+.glyphicon.glyphicon-plus-sign,.glyphicon.glyphicon-trash {
     @extend .glyphicon.glyphicon-triangle-right;
+}
+.glyphicon.glyphicon-remove-circle {
+    @extend .glyphicon.glyphicon-triangle-right;
+    font-size: 28px;
+    margin-bottom: -5px !important;
+}
+
+.glyphicon.glyphicon-minus-sign {
+    color: #cb0000;
+    font-size: 16px;
+    cursor: pointer;
+
+    &:hover {
+        font-size: 20px;
+    }
+}
+.glyphicon.glyphicon-plus-sign.add{
+  @extend .glyphicon.glyphicon-minus-sign;
+  color: #3f681c;
+  padding-left: 0px;
+  &:hover{
+    color: #3f681c !important;
+  }
+
+}
+.form-group {
+    label {
+        font-size: 1em !important;
+    }
 }
 
 .col-sm-1,
@@ -99,7 +127,6 @@ hr {
     margin-bottom: 0 !important;
 
     .panel-heading {
-
         font-weight: normal !important;
         background-color: $panelHeadingBackground !important;
         color: $panelHeadingFontColor !important;
@@ -123,8 +150,9 @@ hr {
     .panel-heading.no-hover {
         @include active-background();
     }
-    .panel-heading.active{
-      @include active-background();
+
+    .panel-heading.active {
+        @include active-background();
     }
 }
 
@@ -167,6 +195,37 @@ objective {
                 }
             }
         }
+    }
+}
+
+.modal-header {
+    background-color: #002c54;
+    color: $white;
+}
+
+.btn.btn-primary {
+    background-color: #063852;
+}
+
+// .btn.btn-primary.add {
+//     background-color: #3f681c;
+//     border-color: #3f681c;
+// }
+
+.btn.btn-warning {
+    background-color: #f0810f;
+}
+
+.modal-title {
+    color: #fff !important;
+    margin: 0 !important;
+    line-height: 1.2 !important;
+    font-size: 24px !important;
+}
+
+.form-horizontal {
+    .control-label {
+        text-align: left !important;
     }
 }
 

@@ -2,7 +2,8 @@
     <div class="panel-heading" ng-class="{'active': !vm.status.isCollapsed}">
         <span class="section-title">Summary</span>
         <span class="pull-right">
-          <span><i class="glyphicon" ng-class="{'glyphicon glyphicon glyphicon-plus-sign': vm.status.isEmpty, 'glyphicon glyphicon-edit': !vm.status.isEmpty}"></i></span>
+          <span><i class="glyphicon" ng-class="{'glyphicon glyphicon glyphicon-plus-sign': vm.status.isEmpty, 'glyphicon glyphicon-edit': !vm.status.isEmpty}"
+            ng-click="vm.open(vm.sumamryData.userId)"></i></span>
           <ng-include src="'scripts/resources/views/accordion-icon.html'" ng-click="vm.status.isCollapsed = !vm.status.isCollapsed" />
         </span>
     </div>

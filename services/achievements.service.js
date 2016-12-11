@@ -14,7 +14,7 @@ var getAchievementsById = function(userId) {
     });
     return deferred.promise;
 
-//Alternative way
+    //Alternative way
     /*Q(achievements.findOne({userId: 755613})
         .exec())
         .then(function(achievements) {
@@ -27,11 +27,32 @@ var getAchievementsById = function(userId) {
         }).done(function(){
           mongoose.disconnect();
         });*/
+}
 
+var updateAchievementsData = function(achievementsData) {
+    var deferred = Q.defer();
+    achievements.findOne({
+        userId: achievementsData.userId
+    }, function(error, achievements) {
+        if (error) {
+
+        } else {
+            achievements.achievementsList = achievementsData.achievementsList;
+            achievements.save(function(err, updatedAchievementsData) {
+                if (err) {
+                    deferred.reject(new Error(error));
+                } else {
+                    deferred.resolve(updatedAchievementsData);
+                }
+            });
+        }
+    });
+    return deferred.promise;
 }
 
 var achievementsService = {
-    getAchievementsById: getAchievementsById
+    getAchievementsById: getAchievementsById,
+    updateAchievementsData: updateAchievementsData
 }
 
 module.exports = achievementsService

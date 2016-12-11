@@ -1,5 +1,6 @@
 var express = require('express');
 var app = express();
+var bodyParser = require("body-parser");
 var mongoose = require('./connection');
 var achievements = require('./routes/achievements.route');
 var currentStatus = require('./routes/currentStatus.route');
@@ -8,6 +9,9 @@ var employment = require('./routes/employment.route');
 var objective = require('./routes/objective.route');
 var skills = require('./routes/skills.route');
 var summary = require('./routes/summary.route');
+
+app.use(bodyParser.urlencoded({extended : true}));
+app.use(bodyParser.json({extended : true}));
 
 app.use('/achievements', achievements);
 app.use('/currentStatus', currentStatus);

@@ -19,15 +19,39 @@ ul.nav.navbar-nav li.active a {
 .glyphicon.glyphicon-triangle-bottom,
 .glyphicon.glyphicon-triangle-right,
 .glyphicon.glyphicon-edit,
-.glyphicon.glyphicon-plus-sign {
+.glyphicon.glyphicon-plus-sign,
+.glyphicon.glyphicon-trash,
+.glyphicon.glyphicon-remove-circle {
   padding-left: 10px;
   font-weight: normal !important; }
   .glyphicon.glyphicon-triangle-bottom:hover,
   .glyphicon.glyphicon-triangle-right:hover,
   .glyphicon.glyphicon-edit:hover,
-  .glyphicon.glyphicon-plus-sign:hover {
+  .glyphicon.glyphicon-plus-sign:hover,
+  .glyphicon.glyphicon-trash:hover,
+  .glyphicon.glyphicon-remove-circle:hover {
     color: #438998 !important;
     cursor: pointer !important; }
+
+.glyphicon.glyphicon-remove-circle {
+  font-size: 28px;
+  margin-bottom: -5px !important; }
+
+.glyphicon.glyphicon-minus-sign, .glyphicon.glyphicon-plus-sign.add {
+  color: #cb0000;
+  font-size: 16px;
+  cursor: pointer; }
+  .glyphicon.glyphicon-minus-sign:hover, .glyphicon.glyphicon-plus-sign.add:hover {
+    font-size: 20px; }
+
+.glyphicon.glyphicon-plus-sign.add {
+  color: #3f681c;
+  padding-left: 0px; }
+  .glyphicon.glyphicon-plus-sign.add:hover {
+    color: #3f681c !important; }
+
+.form-group label {
+  font-size: 1em !important; }
 
 .col-sm-1,
 .col-sm-10,
@@ -95,6 +119,25 @@ objective .col-sm-6 .panel .panel-body .row {
 objective .col-sm-6 .panel .panel-body .row.author {
   text-align: right;
   font-style: italic; }
+
+.modal-header {
+  background-color: #002c54;
+  color: #ffffff; }
+
+.btn.btn-primary {
+  background-color: #063852; }
+
+.btn.btn-warning {
+  background-color: #f0810f; }
+
+.modal-title {
+  color: #fff !important;
+  margin: 0 !important;
+  line-height: 1.2 !important;
+  font-size: 24px !important; }
+
+.form-horizontal .control-label {
+  text-align: left !important; }
 
 current-status .col-sm-4 .panel .panel-heading {
   font-size: 1.1em !important; }

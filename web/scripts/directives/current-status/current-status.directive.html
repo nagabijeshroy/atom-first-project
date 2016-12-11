@@ -3,7 +3,8 @@
     <div class="panel-heading no-hover">
       Current Employment
       <span class="pull-right">
-        <span><i class="glyphicon" ng-class="{'glyphicon glyphicon glyphicon-plus-sign': vm.status.isEmpty, 'glyphicon glyphicon-edit': !vm.status.isEmpty}"></i></span>
+        <span><i class="glyphicon" ng-class="{'glyphicon glyphicon glyphicon-plus-sign': vm.status.isEmpty,
+          'glyphicon glyphicon-edit': !vm.status.isEmpty}" ng-click="vm.open(vm.currentStatusData.userId)"></i></span>
       </span>
     </div>
     <div class="panel-body">

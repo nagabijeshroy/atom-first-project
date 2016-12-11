@@ -2,7 +2,7 @@
     <div class="panel panel-default">
         <div class="panel-heading no-hover">
             <span class="full-name">{{vm.objectiveData.fullName}}</span>
-            <i class="pull-right glyphicon" ng-class="{'glyphicon glyphicon glyphicon-plus-sign': vm.status.isEmpty, 'glyphicon glyphicon-edit': !vm.status.isEmpty}"></i>
+            <i class="pull-right glyphicon" ng-class="{'glyphicon glyphicon glyphicon-plus-sign': vm.status.isEmpty, 'glyphicon glyphicon-edit': !vm.status.isEmpty}" ng-click="vm.open(vm.objectiveData.userId)"></i>
             <h4>{{vm.objectiveData.statement}}</h4>
         </div>
         <div class="panel-body">
